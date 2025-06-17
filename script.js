@@ -1,4 +1,5 @@
-const menu = document.querySelector(".menu");
+window.addEventListener("load", () => {
+  const menu = document.querySelector(".menu");
 const cross = document.querySelector(".cross");
 const t1 = gsap.timeline();
 
@@ -59,3 +60,5 @@ if (window.innerWidth <= 1080) {
 }
 
 
+
+});
