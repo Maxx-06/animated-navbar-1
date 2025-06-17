@@ -1,0 +1,156 @@
+@font-face {
+    font-family: "MyFont";
+    src: url("fonts/AeonikTRIAL-Light.woff") format("woff");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "MyFont", sans-serif;
+    font-size: 16px;
+    color: aliceblue;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1699145748707-027f07352937?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 2% 10%;
+    background: rgb(0, 0, 0);
+    /* semi-transparent */
+    backdrop-filter: blur(60px);
+    /* the blur */
+    -webkit-backdrop-filter: blur(60px);
+    /* for Safari */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+
+nav .menu {
+    display: none;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+.logo {
+
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.nav-links ul li {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.cross {
+    display: none;
+}
+
+
+.container {
+    width: 100%;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 10%;
+
+
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+.container p {
+    font-size: 2rem;
+    text-align: center;
+}
+
+@media screen and (max-width:1080px) {
+
+
+
+    nav {
+        font-size: 10px;
+
+    }
+
+    .logo {
+        font-size: 2rem;
+        font-weight: 900;
+
+    }
+
+    nav .menu {
+        display: initial;
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: -75%;
+        top: 0px;
+        width: 75%;
+        background-color: black;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 20px;
+        height: 100vh;
+        padding: 100px 40px;
+    }
+
+    .nav-links ul li {
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: 2.5px;
+    }
+
+
+
+    .cross {
+        display: initial;
+
+    }
+
+    .cross {
+        font-size: 2.5rem;
+        font-weight: 400;
+        position: absolute;
+        top: 2%;
+        right: 8%;
+    }
+
+
+
+
+}
